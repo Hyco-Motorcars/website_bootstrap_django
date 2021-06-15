@@ -1,0 +1,25 @@
+.navbar {
+    background-color: #F4F3F3;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+}
+
+.nav-link {
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding-left: 10px !important;
+}
+
+.nav-link:hover {
+    box-shadow: inset 0px -5px 27px -8px rgba(0, 0, 0, 0.58);
+    color: #cea135 !important;
+}
+
+.dropdown-menu {
+    background-color: #F4F3F3;
+    box-shadow: inset 0px -5px 27px -8px rgba(0, 0, 0, 0.58);
+}
+
+.dropdown-item:hover {
+    color: #cea135;
+    background-color: transparent;
+}

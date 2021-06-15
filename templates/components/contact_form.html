@@ -1,0 +1,41 @@
+{% load static %}
+
+
+<div class="container-fluid form-container p-5">
+    <div class="row py-4">
+        <div class="col">
+            <h1>Get in touch with us!</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInputFirstName" placeholder="First Name">
+                <label for="floatingInputFirstName">First Name</label>
+            </div>
+        </div>
+        <div class="col">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInputLastName" placeholder="Last Name">
+                <label for="floatingInputLastName">Last Name</label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInputEmail" placeholder="Email">
+        <label for="floatingInputEmail">Email address</label>
+    </div>
+    
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Write message here" id="floatingTextarea2" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Message</label>
+    </div>
+
+    <div class="row py-4 justify-content-center">
+        <div class="col-auto">
+            <button class="btn btn-primary" type="submit">Submit</button>
+        </div>
+    </div>
+</div>

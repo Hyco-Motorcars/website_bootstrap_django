@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_content %}
+
+<title>Homepage</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- Main body -->
+<div class="container-fluid" style="padding: 0px">
+    <!-- Background image -->
+    <div class="bg-image" style="background-image: url('{% static 'images/background/land_rover.jpg' %}'); 
+        height: 1000px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;"
+    ></div>
+    <!-- Background image -->
+</div>
+
+{% include 'components/contact_form.html' %}
+
+{% endblock %}
