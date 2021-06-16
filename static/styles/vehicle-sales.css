@@ -1,0 +1,15 @@
+.list-group-item i {
+    width: 25px;
+    margin: 0px 10px;
+}
+
+.card {
+    box-shadow: 10px 8px 6px 0px rgba(0, 0, 0, 0.2);
+    background-color: #F4F3F3;
+}
+
+.history-card {
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+}

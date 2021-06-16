@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_content %}
+
+<title>Vehicle Sales</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- Main body -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                {% for vehicle in all_vehicles %}
+                    <div class="col p-5">
+                        <div class="card" style="width: 20rem;">
+                            <img src="{% static 'images/background/land_rover.jpg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">{{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}</h5>
+                              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ forloop.counter }}" aria-expanded="false" aria-controls="collapseExample">
+                                See History
+                              </button>
+                              <div class="collapse" id="collapse{{ forloop.counter }}">
+                                <div class="card card-body history-card">
+                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit maiores consequatur ipsa?
+                                </div>
+                              </div>
+                            </div>
+                            <ul class="list-group list-group-flush">         
+                                <li class="list-group-item"><i class="fas fa-car"></i>Make: {{ vehicle.make }}</li>
+                                <li class="list-group-item"><i class="fas fa-cogs"></i>Model: {{ vehicle.model }}</li>
+                                <li class="list-group-item"><i class="fas fa-history"></i>Year: {{ vehicle.year }}</li>
+                                <li class="list-group-item"><i class="fas fa-fill-drip"></i>Color: {{ vehicle.exterior_color }}</li>
+                                <li class="list-group-item"><i class="fas fa-magic"></i>Interior: {{ vehicle.interior }}</li>
+                                <li class="list-group-item"><i class="fas fa-dollar-sign"></i>Price: ${{ vehicle.listing_price }}</li>                   
+                            </ul>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
