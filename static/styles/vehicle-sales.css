@@ -13,3 +13,11 @@
     background-color: transparent;
     border: none;
 }
+
+.car-card-container {
+    background-image: url('../images/background/land_rover.jpg'); 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
