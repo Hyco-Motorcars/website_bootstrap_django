@@ -14,10 +14,20 @@
     border: none;
 }
 
-.car-card-container {
+.vehicle-sales-container {
     background-image: url('../images/background/land_rover.jpg'); 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.filter-style {
+    background-color: #F4F3F3;
+    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+    border-radius: 5px;
+}
+
+.form-select-style {
+    background-color: #F4F3F3;
 }
