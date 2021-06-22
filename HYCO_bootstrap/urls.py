@@ -18,13 +18,17 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 
-from pages.views import homepage_view, vehicle_sales_view, about_view
+from pages.views import homepage_view, vehicle_sales_view, about_view, contact_view, rentals_view, storage_view, detailing_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homepage_view, name='homepage'),
     path('vehicle-sales/', vehicle_sales_view, name='vehicle-sales'),
     path('about/', about_view, name='about'),
+    path('contact/', contact_view, name='contact'),
+    path('rentals/', rentals_view, name='rentals'),
+    path('storage/', storage_view, name='storage'),
+    path('detailing/', detailing_view, name='detailing'),
 ]
 
 if settings.DEBUG:

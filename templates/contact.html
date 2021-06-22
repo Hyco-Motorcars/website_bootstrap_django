@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head_content %}
+
+<title>Contact Us</title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+<!-- Main body -->
+<!-- Page heading -->
+<div class="container-fluid py-5 heading-style">
+    <div class="container">
+        <div class="row">
+            <h1>Contact Us!</h1>
+        </div>
+    </div>
+</div>
+
+<!-- About section -->
+<div class="container-fluid bg-dark bg-gradient">
+    <div class="container text-light">
+        <div class="row justify-content-center py-5">
+            <div class="col-auto">
+                <h1>There are two ways to get in touch.</h1>
+            </div>
+        </div>
+        <div class="row justify-content-around py-4">
+            <div class="col-4 p-5 text-left fs-4" style="border: solid 2px white; border-radius: 10px;">
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <i class="fas fa-pencil-alt" style="font-size: 2em;"></i>
+                    </div>
+                    <div class="col">
+                        Fill out the contact form below with your name, contact info, and a message and we will reach out as soon as we can to answer your questions.
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-5 text-left fs-4" style="border: solid 2px white; border-radius: 10px;">
+                <div class="row justify-content-between">
+                    <div class="col-2">
+                        <i class="fas fa-phone-volume" style="font-size: 2em;"></i>
+                    </div>
+                    <div class="col">
+                        Call (555) 555-5555 and we will talk to you directly with any questions.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include 'components/contact_form.html' %}
+
+{% endblock %}

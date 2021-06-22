@@ -51,3 +51,19 @@ def vehicle_sales_view(request, *args, **kwargs):
 def about_view(request, *args, **kwargs):
 
     return render(request, "about.html", {})
+
+def contact_view(request, *args, **kwargs):
+
+    return render(request, "contact.html", {})
+
+def rentals_view(request, *args, **kwargs):
+
+    return render(request, "rentals.html", {})
+
+def storage_view(request, *args, **kwargs):
+
+    return render(request, "storage.html", {})
+
+def detailing_view(request, *args, **kwargs):
+
+    return render(request, "detailing.html", {})
