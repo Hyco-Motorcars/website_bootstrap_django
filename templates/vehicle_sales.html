@@ -14,7 +14,14 @@
 <!-- Main body -->
 <div class="container-fluid px-0 vehicle-sales-container">
 
-  {% include 'components/page_heading.html' %}
+  <!-- Page heading -->
+  <div class="container-fluid py-5 heading-style">
+    <div class="container">
+        <div class="row">
+            <h1>Vehicle Sales</h1>
+        </div>
+    </div>
+  </div>
 
   {% include 'components/filter_form.html' %}
 
@@ -128,8 +135,8 @@
       </div>
     </div>
 
-    {% endif %}
   </div>
+  {% endif %}
   
 </div>
 

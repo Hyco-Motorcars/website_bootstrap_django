@@ -16,6 +16,7 @@ def vehicle_sales_view(request, *args, **kwargs):
     vehicle_year = request.GET.get('searchyear')
     vehicle_exterior = request.GET.get('searchexterior')
     vehicle_interior = request.GET.get('searchinterior')
+    vehicle_minprice = request.GET.get('searchminprice')
     vehicle_maxprice = request.GET.get('searchmaxprice')
 
 
@@ -34,7 +35,10 @@ def vehicle_sales_view(request, *args, **kwargs):
     if vehicle_interior != '' and vehicle_interior != 'select interior color' and vehicle_interior is not None:
         vehicle_qs = vehicle_qs.filter(interior__icontains=vehicle_interior)
 
-    if vehicle_maxprice != '' and vehicle_maxprice != 'select max price' and vehicle_maxprice is not None:
+    if vehicle_minprice != '' and vehicle_minprice is not None:
+        vehicle_qs = vehicle_qs.filter(listing_price__gte=vehicle_minprice)
+
+    if vehicle_maxprice != '' and vehicle_maxprice is not None:
         vehicle_qs = vehicle_qs.filter(listing_price__lte=vehicle_maxprice)
 
     context = {
@@ -42,3 +46,8 @@ def vehicle_sales_view(request, *args, **kwargs):
     }
 
     return render(request, "vehicle_sales.html", context)
+
+
+def about_view(request, *args, **kwargs):
+
+    return render(request, "about.html", {})
