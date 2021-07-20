@@ -1,8 +1,46 @@
-.form-floating {
-    color: #D2232A;
+.contact-form-container {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+}
+
+.icon-box i {
+  min-width: 60px;
+  height: 60px;
+  background-color: white;
+  text-align: center;
+  padding: 20px 0px;
+  border-radius: 50px;
+}
+
+.contact-form-heading h1 {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  opacity: 1;
+}
+
+.contact-form-container p {
+  color: white;
+  opacity: 0.9;
+  font-size: 1em;
+}
+
+.contact-heading h1 {
+  color: rgb(99, 157, 211);
 }
 
 .form-container {
-    background-color: #F4F3F3;
-    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+  color: #d2232a;
+  opacity: 0.8;
+}
+
+.contact-form-btn {
+  background-color: rgb(99, 157, 211);
+  color: white;
+  border-radius: 0px;
+  opacity: 1 !important;
+}
+
+.contact-form-btn:hover {
+  background-color: rgb(22, 72, 119);
 }

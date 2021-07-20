@@ -19,7 +19,8 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;"
+    background-size: cover;
+    position: relative;"
 >
     <div class="container-fluid brand-background">
         <div class="container">
@@ -42,11 +43,12 @@
             </div>
         </div>
     </div>
+    {% include 'components/contact_form.html' %}
 </div>
 <!-- Background image -->
 
 
-{% include 'components/contact_form.html' %}
+
 
 <!-- JS files -->
 <script src="{% static 'javascript/index.js' %}"></script>

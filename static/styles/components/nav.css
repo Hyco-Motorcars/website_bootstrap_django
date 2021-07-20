@@ -98,6 +98,7 @@
   }
   .menu-items-main {
     position: absolute;
+    z-index: 99;
     right: 0px;
     height: 92vh;
     top: 212px;

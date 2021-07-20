@@ -1,42 +1,152 @@
 {% load static %}
 
 
-<div class="container-fluid form-container p-5">
+<!-- <div class="container-fluid form-container p-5">
+    <div class="container">
+        <div class="row py-2 justify-content-center">
+            <div class="col-auto">
+                <h1>Have a question?</h1>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-auto">
+                        <h1>Fill out the form and we will get in contact with you!</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputFirstName" placeholder="First Name">
+                            <label for="floatingInputFirstName">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputLastName" placeholder="Last Name">
+                            <label for="floatingInputLastName">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="Email">
+                    <label for="floatingInputEmail">Email address</label>
+                </div>
+                
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Write message here" id="floatingTextarea2" style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Message</label>
+                </div>
+
+                <div class="row py-4 justify-content-center">
+                    <div class="col-auto">
+                        <button class="btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-1 align-items-center">
+                <h1>OR</h1>
+            </div>
+
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-auto">
+                        <div class="row">
+                            <div class="col-auto">
+                                <h1>Give us a call!</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <p>
+                                    <i class="fas fa-phone-square-alt"></i> (608) 616-0965
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="container-fluid contact-form-container">
     <div class="container">
         <div class="row py-4">
-            <div class="col">
-                <h1>Get in touch with us!</h1>
+            <div class="col-auto contact-form-heading">
+                <h1>Have a question?</h1>
             </div>
         </div>
-
         <div class="row">
-            <div class="col">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInputFirstName" placeholder="First Name">
-                    <label for="floatingInputFirstName">First Name</label>
-                </div>
-            </div>
-            <div class="col">
-                <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="floatingInputLastName" placeholder="Last Name">
-                    <label for="floatingInputLastName">Last Name</label>
-                </div>
-            </div>
-        </div>
-        
-        <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInputEmail" placeholder="Email">
-            <label for="floatingInputEmail">Email address</label>
-        </div>
-        
-        <div class="form-floating">
-            <textarea class="form-control" placeholder="Write message here" id="floatingTextarea2" style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Message</label>
-        </div>
-
-        <div class="row py-4 justify-content-center">
             <div class="col-auto">
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <p>Fill out the contact form and we will get in touch with you OR give us a call!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-3 icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="col-auto contact-heading">
+                                <h1>Address</h1>
+                                <p>245 Horizon Drive, <br> Verona, Wisconsin, <br> 53593</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-3 icon-box">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="col-auto contact-heading">
+                                <h1>Phone</h1>
+                                <p>(608) 616-0965</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 form-container">
+                <div class="row">
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputFirstName" placeholder="First Name">
+                            <label for="floatingInputFirstName">First Name</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInputLastName" placeholder="Last Name">
+                            <label for="floatingInputLastName">Last Name</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInputEmail" placeholder="Email">
+                    <label for="floatingInputEmail">Email address</label>
+                </div>
+                
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Write message here" id="floatingTextarea2" style="height: 200px"></textarea>
+                    <label for="floatingTextarea2">Message</label>
+                </div>
+
+                <div class="row py-4 justify-content-start">
+                    <div class="col-auto">
+                        <button class="btn btn-primary contact-form-btn" type="submit">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
