@@ -12,18 +12,43 @@
 {% block content %}
 
 <!-- Main body -->
-<div class="container-fluid" style="padding: 0px">
-    <!-- Background image -->
-    <div class="bg-image" style="background-image: url('{% static 'images/background/land_rover.jpg' %}'); 
-        height: 1000px;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;"
-    ></div>
-    <!-- Background image -->
+<!-- Background image -->
+
+<div class="bg-image" style="background-image: url('{% static 'images/background/land_rover.jpg' %}'); 
+    height: 1000px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;"
+>
+    <div class="container-fluid brand-background">
+        <div class="container">
+            <div class="row py-5 justify-content-between brand-markers">
+                <div class="col-auto">
+                    <h1 class="brand-marker">Buy.</h1>
+                </div>
+        
+                <div class="col-auto">
+                    <h1 class="brand-marker">Rent.</h1>
+                </div>
+        
+                <div class="col-auto">
+                    <h1 class="brand-marker">Store.</h1>
+                </div>
+        
+                <div class="col-auto">
+                    <h1 class="brand-marker">Detail.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<!-- Background image -->
+
 
 {% include 'components/contact_form.html' %}
+
+<!-- JS files -->
+<script src="{% static 'javascript/index.js' %}"></script>
 
 {% endblock %}
