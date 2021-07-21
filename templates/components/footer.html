@@ -2,31 +2,15 @@
 
 <div class="container-fluid footer-container">
     <div class="row justify-content-between align-items-center px-3">
-        <div class="col-auto">
-            <div class="row justify-content-start">
-                <div class="col-auto">
-                    <p><i class="fas fa-map-marker-alt"></i> 245 Horizon Drive <br>
-                        Verona, WI 53593</p>
-                </div>
-            </div>
-            <div class="row justify-content-start">
-                <div class="col-auto">
-                    <p><i class="fas fa-phone"></i> (555) 555-5555</p>
-                </div>
-            </div>
-            <div class="row justify-content-start">
-                <div class="col-auto">
-                    <p><i class="fas fa-clock"></i> 10AM - 5PM</p>
-                </div>
-            </div>
-        </div>
         <div class="col-auto justify-content-center">
             <div class="row justify-content-center align-items-center py-2">
-                <img src="{% static 'images/logos/HYCO_logo variations_editable_type_nohyco_MDK.png' %}" alt="Logo" class="footer-logo">
-            </div>
-
-            <div class="row text-center">
-                <p><i class="far fa-copyright"></i> HYCO Motorsports LLC</p>
+                <div class="col-auto">
+                    <div class="nav-logo py-3">
+                        <a href="#">
+                          <img src="{% static 'images/logos/HYCO_logo variations_editable_type_nohyco_MDK.png' %}" alt="" width="70" height="100%">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-auto">
@@ -47,6 +31,34 @@
                     </a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <ul class="menu-items-footer">
+                <li>
+                  <a href="{% url 'homepage' %}">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'vehicle-sales' %}">Vehicle Sales</a>
+                </li>
+                <li>
+                  <a href="{% url 'rentals' %}">Rentals</a>
+                </li>
+                <li>
+                  <a href="{% url 'storage' %}">Storage</a>
+                </li>
+                <li>
+                  <a href="{% url 'detailing' %}">Detailing/Paint Correction</a>
+                </li>
+                <li>
+                  <a href="{% url 'about' %}">About</a>
+                </li>
+              </ul>
+        </div>
+        <div class="col-auto">
+            <p class="px-2 copyright-tag"><i class="far fa-copyright"></i> 2021 HYCO Motorsports LLC</p>
         </div>
     </div>
 </div>

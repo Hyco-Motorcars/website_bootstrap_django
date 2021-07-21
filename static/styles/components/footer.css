@@ -1,19 +1,44 @@
 .footer-container {
-    background-color: #D2232A !important;
-    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+  background-color: #d2232a !important;
+  box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
 }
 
 .footer-logo {
-    width: 180px;
-    height: 100%;
+  width: 180px;
+  height: 100%;
 }
 
 .social-media-tag a {
-    font-size: 2em;
-    color: black;
-    transition: 0.3s all;
+  font-size: 2em;
+  color: black;
+  transition: 0.3s all;
 }
 
 .social-media-tag a:hover {
-    color: #cea135;
+  color: #cea135;
+}
+
+.menu-items-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 80vw; */
+}
+
+.menu-items-footer li {
+  list-style: none;
+}
+
+.menu-items-footer li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.menu-items-footer li a:hover {
+  color: #cea135;
+}
+
+.copyright-tag {
+  border-left: 1px solid black;
 }

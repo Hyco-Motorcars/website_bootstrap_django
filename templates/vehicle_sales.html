@@ -23,7 +23,7 @@
     </div>
   </div>
 
-  {% include 'components/filter_form.html' %}
+  
 
   {% if all_vehicles|length > 0 %}
 
@@ -34,7 +34,7 @@
           <div class="col py-5">
             <div class="row justify-content-center">
             <div class="card" style="width: 22rem;">
-              <div id="carouselExampleControls{{ forloop.counter }}" class="carousel slide" data-bs-ride="carousel">
+              <div id="carouselExampleControls{{ forloop.counter }}" class="carousel slide py-2" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active" data-bs-interval="100000">
                     <img src="{% static 'images/background/land_rover.jpg' %}" class="d-block w-100" alt="...">
@@ -69,7 +69,7 @@
                   </div>
                 </div>
               </div>
-              <ul class="list-group list-group-flush">         
+              <ul class="list-group list-group-flush py-2">         
                   <li class="list-group-item"><i class="fas fa-car"></i>Make: {{ vehicle.make }}</li>
                   <li class="list-group-item"><i class="fas fa-cogs"></i>Model: {{ vehicle.model }}</li>
                   <li class="list-group-item"><i class="fas fa-history"></i>Year: {{ vehicle.year }}</li>

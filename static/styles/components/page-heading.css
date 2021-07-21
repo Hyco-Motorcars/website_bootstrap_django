@@ -1,5 +1,11 @@
 .heading-style {
-    background-color: #D2232A;
-    box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
-    font-family: 'Racing Sans One', cursive;
+  background-color: #d2232a;
+  box-shadow: inset 0px -26px 79px -8px rgba(0, 0, 0, 0.58);
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+}
+
+.heading-style h1 {
+  color: black;
 }
