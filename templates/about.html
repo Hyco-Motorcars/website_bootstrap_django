@@ -12,17 +12,17 @@
 {% block content %}
 
 <!-- Main body -->
-<!-- Page heading -->
-<div class="container-fluid py-5 heading-style">
-    <div class="container">
-        <div class="row">
-            <h1>Who Is Hyco?</h1>
-        </div>
-    </div>
-</div>
 
 <!-- About section -->
-<div class="container-fluid bg-dark bg-gradient">
+<div class="container-fluid bg-dark bg-gradient px-0">
+    <!-- Page heading -->
+    <div class="container-fluid py-5 heading-style">
+        <div class="container">
+            <div class="row">
+                <h1>Who Is Hyco?</h1>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row py-5 justify-content-between">
             <div class="col-4">
@@ -50,6 +50,7 @@
     </div>
 </div>
 
+{% include 'components/social_media.html' %}
 {% include 'components/contact_form.html' %}
 
 {% endblock %}

@@ -1,7 +1,7 @@
 .contact-form-container {
   background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  bottom: 0;
+  /* position: absolute; */
+  /* bottom: 0; */
 }
 
 .icon-box i {

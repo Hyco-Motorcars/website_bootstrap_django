@@ -112,6 +112,13 @@
                           <li class="list-group-item"><i class="fas fa-dollar-sign"></i> ${{ vehicle.listing_price }}</li>
                         </ul>
                       </div>
+                      <div class="row">
+                        <div class="collapse.show" id="collapseExample">
+                          <div class="card card-body">
+                            For purchasing interest please call the sales office at (608) 616-0965 or email sales@warholgroup.com.
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -139,6 +146,9 @@
   {% endif %}
   
 </div>
+
+{% include 'components/social_media.html' %}
+{% include 'components/contact_form.html' %}
 
 <!-- JS files -->
 <script src="{% static 'javascript/car-modal.js' %}"></script>
